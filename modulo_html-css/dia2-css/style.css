@@ -1,0 +1,20 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+}
+ul {
+    background-color: blue;
+}
+.backcolor {
+    background-color: aqua;
+}
+.fontes {
+  font-family: sans-serif;
+}
+.weigh {
+  font-weight: 600px;
+  font-size: 3em;
+}
+body {
+  font-size: 16px;
+}
