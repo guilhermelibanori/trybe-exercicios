@@ -79,26 +79,44 @@
 
 //         console.log(movement)
 
-let porcentagem = 50;
-let nota = '';
-    if(porcentagem >= 90){
-        nota = 'A';
+// let porcentagem = 11;
+// let nota = '';
+//     if(porcentagem >= 90){
+//         nota = 'A';
+//     }
+//     else if(porcentagem >= 80 && porcentagem < 90){
+//         nota = 'B';
+//     }
+//     else if(porcentagem >= 70 && porcentagem < 80){
+//         nota = 'C';
+//     }
+//     else if(porcentagem >= 60 && porcentagem < 70){
+//         nota = 'D';
+//     }
+//     else if(porcentagem >= 50 && porcentagem < 60){
+//         nota = 'E';
+//     }
+//     else if(porcentagem <= 50 && porcentagem >= 0){
+//         nota = 'F';
+//     }
+//     else if(porcentagem >= 100 || porcentagem < 0){
+//         nota = 'Maior que 100 ou menor que 100 nota ínvalida';
+//     }
+//     console.log(nota)
+
+const numeroA = 19;
+const numeroB = 42;
+const numeroC = 12;
+    if(numeroA % 2 === 0|| numeroB % 2 === 0 || numeroC % 2 === 0){
+        console.log('True')
     }
-    else if(porcentagem >= 80 && porcentagem < 90){
-        nota = 'B';
+    else{
+        console.log('False')
     }
-    else if(porcentagem >= 70 && porcentagem < 80){
-        nota = 'C';
+    
+    if(numeroA % 2 === 1|| numeroB % 2 === 1 || numeroC % 2 === 1){
+        console.log('True')
     }
-    else if(porcentagem >= 60 && porcentagem < 70){
-        nota = 'D';
-    }
-    else if(porcentagem >= 50 && porcentagem < 60){
-        nota = 'E';
-    }
-    else if(porcentagem <= 50 && porcentagem > 0){
-        nota = 'F';
-    }
-    else if(porcentagem >= 100 || porcentagem < 0){
-        nota = 'Maior que 100 ou menor que 100 nota ínvalida';
+    else{
+        console.log('False')
     }
