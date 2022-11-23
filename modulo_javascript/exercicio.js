@@ -51,30 +51,54 @@
 //     console.log('Ângulo Invalido');
 // }
 
-let chess = 'BISHOP';
-let chesslowercase = chess.toLowerCase();
-let movement = '?';
-    switch(chesslowercase){
-        case 'bishop':
-            movement = 'Moves diagonally';
-            break;
-        case 'pawn':
-            movement = 'One Square Straight Ahead';
-            break;
-        case 'rook':
-            movement = 'Its line or row';
-            break;
-        case 'knight':
-            movement = 'Jumps in making the shortest move that is not a straight one';
-            break;
-        case 'queen':
-            movement = 'May move like a Rook or a Bishop';
-            break;
-        case 'king':
-            movement = 'Moves from its square to a neighboring square';
-            break;
-        default: 
-            movement = 'Not a valid piece';
-          }
+// let chess = 'BISHOP';
+// let chesslowercase = chess.toLowerCase();
+// let movement = '?';
+//     switch(chesslowercase){
+//         case 'bishop':
+//             movement = 'Moves diagonally';
+//             break;
+//         case 'pawn':
+//             movement = 'One Square Straight Ahead';
+//             break;
+//         case 'rook':
+//             movement = 'Its line or row';
+//             break;
+//         case 'knight':
+//             movement = 'Jumps in making the shortest move that is not a straight one';
+//             break;
+//         case 'queen':
+//             movement = 'May move like a Rook or a Bishop';
+//             break;
+//         case 'king':
+//             movement = 'Moves from its square to a neighboring square';
+//             break;
+//         default: 
+//             movement = 'Not a valid piece';
+//           }
 
-        console.log(movement)
+//         console.log(movement)
+
+let porcentagem = 50;
+let nota = '';
+    if(porcentagem >= 90){
+        nota = 'A';
+    }
+    else if(porcentagem >= 80 && porcentagem < 90){
+        nota = 'B';
+    }
+    else if(porcentagem >= 70 && porcentagem < 80){
+        nota = 'C';
+    }
+    else if(porcentagem >= 60 && porcentagem < 70){
+        nota = 'D';
+    }
+    else if(porcentagem >= 50 && porcentagem < 60){
+        nota = 'E';
+    }
+    else if(porcentagem <= 50 && porcentagem > 0){
+        nota = 'F';
+    }
+    else if(porcentagem >= 100 || porcentagem < 0){
+        nota = 'Maior que 100 ou menor que 100 nota ínvalida';
+    }
