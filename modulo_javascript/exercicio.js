@@ -104,19 +104,32 @@
 //     }
 //     console.log(nota)
 
-const numeroA = 19;
-const numeroB = 42;
-const numeroC = 12;
-    if(numeroA % 2 === 0|| numeroB % 2 === 0 || numeroC % 2 === 0){
-        console.log('True')
-    }
-    else{
-        console.log('False')
-    }
+// const numeroA = 19;
+// const numeroB = 42;
+// const numeroC = 12;
+//     if(numeroA % 2 === 0|| numeroB % 2 === 0 || numeroC % 2 === 0){
+//         console.log('True')
+//     }
+//     else{
+//         console.log('False')
+//     }
     
-    if(numeroA % 2 === 1|| numeroB % 2 === 1 || numeroC % 2 === 1){
-        console.log('True')
-    }
-    else{
-        console.log('False')
-    }
+//     if(numeroA % 2 === 1|| numeroB % 2 === 1 || numeroC % 2 === 1){
+//         console.log('True')
+//     }
+//     else{
+//         console.log('False')
+//     }
+
+const valorDeCompra = 14;
+const valorDeVenda = 19;
+const imposto = 0.2;
+let custoDoProduto = 14 * imposto;
+let lucro
+if(valorDeCompra <= 0 || valorDeVenda <= 0){
+    console.log('Você precisa colocar um valor valido')
+}
+else{
+    lucro = valorDeVenda - custoDoProduto
+    console.log(lucro)
+}
