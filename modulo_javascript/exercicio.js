@@ -51,7 +51,7 @@
 //     console.log('Ângulo Invalido');
 // }
 
-// let chess = 'BISHOP';
+// let chess = '?';
 // let chesslowercase = chess.toLowerCase();
 // let movement = '?';
 //     switch(chesslowercase){
@@ -121,15 +121,45 @@
 //         console.log('False')
 //     }
 
-const valorDeCompra = 14;
-const valorDeVenda = 19;
-const imposto = 0.2;
-let custoDoProduto = 14 * imposto;
-let lucro
-if(valorDeCompra <= 0 || valorDeVenda <= 0){
-    console.log('Você precisa colocar um valor valido')
+// const valorDeCompra = 14;
+// const valorDeVenda = 19;
+// const imposto = 0.2;
+// let custoDoProduto = 14 * imposto;
+// let lucro
+// if(valorDeCompra <= 0 || valorDeVenda <= 0){
+//     console.log('Você precisa colocar um valor valido')
+// }
+// else{
+//     lucro = valorDeVenda - custoDoProduto
+//     console.log(lucro)
+// }
+
+let desconto = '?';
+let salarioBruto = 1993.19;
+let descontoINSS
+let descontoIR
+let salarioINSS
+let salarioLiquido
+
+if(salarioBruto <= 1556.94){
+    descontoINSS = salarioBruto*0.08;
+    salarioINSS = salarioBruto-descontoINSS
 }
-else{
-    lucro = valorDeVenda - custoDoProduto
-    console.log(lucro)
+else if(salarioBruto > 1556.95 && salarioBruto < 2594.92){
+    descontoINSS = salarioBruto*0.09;
+    salarioINSS = salarioBruto-descontoINSS
 }
+else if(salarioBruto > 2594.93 && salarioBruto < 5189.82){
+    descontoINSS = salarioBruto*0.11;
+    salarioINSS = salarioBruto-descontoINSS
+}
+else if(salarioBruto >= 5189.82){
+    descontoINSS = salarioBruto-570.88;
+    salarioINSS = salarioBruto-descontoINSS
+}
+if(salarioBruto)
+
+
+console.log(salarioLiquido)
+
+
