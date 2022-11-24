@@ -135,31 +135,49 @@
 // }
 
 let desconto = '?';
-let salarioBruto = 1993.19;
+let salarioBruto = 3000;
 let descontoINSS
 let descontoIR
 let salarioINSS
 let salarioLiquido
 
 if(salarioBruto <= 1556.94){
-    descontoINSS = salarioBruto*0.08;
-    salarioINSS = salarioBruto-descontoINSS
+    descontoINSS = salarioBruto * 0.08;
+    salarioINSS = salarioBruto - descontoINSS;
 }
 else if(salarioBruto > 1556.95 && salarioBruto < 2594.92){
-    descontoINSS = salarioBruto*0.09;
-    salarioINSS = salarioBruto-descontoINSS
+    descontoINSS = salarioBruto * 0.09;
+    salarioINSS = salarioBruto - descontoINSS;
 }
 else if(salarioBruto > 2594.93 && salarioBruto < 5189.82){
-    descontoINSS = salarioBruto*0.11;
-    salarioINSS = salarioBruto-descontoINSS
+    descontoINSS = salarioBruto * 0.11;
+    salarioINSS = salarioBruto - descontoINSS;
 }
 else if(salarioBruto >= 5189.82){
-    descontoINSS = salarioBruto-570.88;
-    salarioINSS = salarioBruto-descontoINSS
+    descontoINSS = salarioBruto - 570.88;
+    salarioINSS = salarioBruto - descontoINSS;
 }
-if(salarioBruto)
+if(salarioINSS <= 1903.98){
+    salarioLiquido = salarioINSS;
+}
+else if(salarioINSS > 1903.98 && salarioINSS <= 2826.65){
+    descontoIR = (salarioINSS * 0.075) - 142.80;
+    salarioLiquido = salarioINSS - descontoIR;
+}
+else if(salarioINSS >= 2826.66 && salarioINSS <= 3751.05){
+    descontoIR = (salarioINSS * 0.15) - 354.80;
+    salarioLiquido = salarioINSS - descontoIR;
+}
+else if(salarioINSS >= 3751.06 && salarioINSS <= 4664.68){
+    descontoIR = (salarioINSS * 0.225) - 636.13;
+    salarioLiquido = salarioINSS - descontoIR;
+}
+else if(salarioINSS > 4664.68){
+    descontoIR = (salarioINSS * 0.275) - 869.36;
+    salarioLiquido = salarioINSS - descontoIR;
+}
 
 
-console.log(salarioLiquido)
+console.log(salarioLiquido.toFixed(2))
 
 
