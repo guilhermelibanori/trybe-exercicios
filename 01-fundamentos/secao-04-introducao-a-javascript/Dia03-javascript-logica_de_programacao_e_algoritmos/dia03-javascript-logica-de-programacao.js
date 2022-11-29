@@ -14,7 +14,7 @@
 // let word = 'tryber';
 // let wordBackwards = '';
 
-// for(index = word.length; index >= 0; index -= 1){
+// for(let index = word.length; index >= 0; index -= 1){
 //     wordBackwards += word.charAt(index)
 //     console.log(wordBackwards)
 // }
@@ -22,19 +22,43 @@
 // Utilize a estrutura de repetição for para escrever dois algoritmos:
 // um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-let menorPalavra = array[0];
-let maiorPalavra = array[0];
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let menorPalavra = array[0];
+// let maiorPalavra = array[0];
 
-for(index = 0; index < array.length; index += 1){
-   checkWord = array[index];
+// for(let index = 0; index < array.length; index += 1){
+//    checkWord = array[index];
   
-   if(checkWord.length > maiorPalavra.length){
-    maiorPalavra = checkWord
-    console.log(maiorPalavra)
-   }
-   if(checkWord.length < menorPalavra.length){
-    menorPalavra = checkWord
-    console.log(menorPalavra)
-   }
+//    if(checkWord.length > maiorPalavra.length){
+//     maiorPalavra = checkWord
+//     console.log(maiorPalavra)
+//    }
+//    if(checkWord.length < menorPalavra.length){
+//     menorPalavra = checkWord
+//     console.log(menorPalavra)
+//    }
+// }
+
+// Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo.
+// Sabendo disso, escreva um algoritmo que imprima no console o maior número primo entre 2 e 50.
+
+let totalPrimeNumber = [];
+let highestPrimeNumber = 0;
+for (let index = 2; index <= 50; index += 1) {
+  primeNumber = index;
+  for (let i = 2; i <= Math.sqrt(index); i += 1) {
+    if (index % i == 0) {
+      primeNumber = false;
+      break;
+    }
+  }
+  if (primeNumber) {
+    totalPrimeNumber.push(primeNumber)
+  }
+ highestPrimeNumber = totalPrimeNumber[totalPrimeNumber.length - 1];
+
 }
+
+console.log(highestPrimeNumber)
+
+
