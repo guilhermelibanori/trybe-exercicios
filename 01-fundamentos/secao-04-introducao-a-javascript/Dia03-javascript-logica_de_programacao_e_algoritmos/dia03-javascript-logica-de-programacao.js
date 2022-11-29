@@ -11,10 +11,30 @@
 
 // Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra. Por exemplo, a palavra “banana” seria invertida para “ananab”. Utilize a string abaixo como exemplo, depois troque por outras para verificar se seu algoritmo está funcionando corretamente.
 
-let word = 'tryber';
-let wordBackwards = '';
+// let word = 'tryber';
+// let wordBackwards = '';
 
-for(index = word.length; index >= 0; index -= 1){
-    wordBackwards += word.charAt(index)
-    console.log(wordBackwards)
+// for(index = word.length; index >= 0; index -= 1){
+//     wordBackwards += word.charAt(index)
+//     console.log(wordBackwards)
+// }
+
+// Utilize a estrutura de repetição for para escrever dois algoritmos:
+// um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let menorPalavra = array[0];
+let maiorPalavra = array[0];
+
+for(index = 0; index < array.length; index += 1){
+   checkWord = array[index];
+  
+   if(checkWord.length > maiorPalavra.length){
+    maiorPalavra = checkWord
+    console.log(maiorPalavra)
+   }
+   if(checkWord.length < menorPalavra.length){
+    menorPalavra = checkWord
+    console.log(menorPalavra)
+   }
 }
