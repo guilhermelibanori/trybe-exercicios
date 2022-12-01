@@ -36,6 +36,17 @@
 // console.log(`O resultado da soma de a + b é: ${soma(a,b)}`);
 
 //   console.log((() => Math.random())());
-let nome = 'Ivan';
+// let nome = 'Ivan';
 
-  console.log((nome => `Olá, ${nome}!`)(nome))
+//   console.log((nome => `Olá, ${nome}!`)(nome))
+
+//   let nome = 'Ivan';
+//   let sobrenome = 'Pires';
+//   console.log(((nome, sobrenome) => `${nome} ${sobrenome}`)(nome, sobrenome));
+
+let speed = 91;
+let limit = ''
+const speedCar = (speed) => {
+    return `Você ${speed <= 90 ? limit = 'está na velocidade permitida' : limit = 'ultrapassou o limite de velocidade'}`;
+};
+console.log(speedCar(speed));
