@@ -44,9 +44,18 @@
 //   let sobrenome = 'Pires';
 //   console.log(((nome, sobrenome) => `${nome} ${sobrenome}`)(nome, sobrenome));
 
-let speed = 91;
-let limit = ''
-const speedCar = (speed) => {
-    return `Você ${speed <= 90 ? limit = 'está na velocidade permitida' : limit = 'ultrapassou o limite de velocidade'}`;
-};
-console.log(speedCar(speed));
+// let speed = 91;
+// let limit = ''
+// const speedCar = (speed) => {
+//     return `Você ${speed <= 90 ? limit = 'está na velocidade permitida' : limit = 'ultrapassou o limite de velocidade'}`;
+// };
+// // console.log((() => `Você ${speed <= 90 ? limit = 'está na velocidade permitida' : limit = 'ultrapassou o limite de velocidade'}`)(speed));
+// console.log(speedCar(speed));
+
+function imprimeIdade() {
+    for (let idade = 30; idade <= 40; idade += 1) {
+      console.log('Idade dentro do for:', idade)
+    }
+    console.log('Idade fora do for:', idade) // retire essa linha ao implementar o tipo de variável correta.  
+  }
+  imprimeIdade()
