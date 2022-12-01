@@ -4,9 +4,15 @@
 // Imprima no terminal “O motor está ligado“ e “O motor está desligado“ (lembre-se de utilizar o template literals nesse momento).
 // Bônus (opcional): tente fazer o mesmo exercício utilizando ternary operator.
 
-let onOrOff = 'off'
-const onOff = () => (onOrOff === 'off' ? onOrOff = 'on' : onOrOff = 'off'
-)
-// console.log((onOff => onOrOff === 'off' ? onOrOff = 'on' : onOrOff === 'off')())
-console.log(`The engine is ${onOff()}`)
-console.log(`The engine is ${onOff()}`)
+// let onOrOff = 'off'
+// const onOff = () => (onOrOff === 'off' ? onOrOff = 'on' : onOrOff = 'off'
+// )
+// // console.log((onOff => onOrOff === 'off' ? onOrOff = 'on' : onOrOff === 'off')())
+// console.log(`The engine is ${onOff()}`)
+// console.log(`The engine is ${onOff()}`)
+
+let pi = 3.14159265359
+
+const circleArea = radius => (pi * radius * radius)
+
+console.log(`Essa é a área do círculo: ${circleArea(5).toFixed(2)}`)
