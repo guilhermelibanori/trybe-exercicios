@@ -75,24 +75,30 @@
 
 // Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-// let array = [2, 3, 2, 5, 8, 2, 3];
-// let repeats = 0;
+let array = [2, 3, 2, 5, 8, 2, 3];
+let repeats = 0;
+let numberRepeated = 0;
+let bestRepeated = 0;
 
-// function repeat(param){
-//     for (let index = 0; index < param.length; index += 1) {
-//         checkNumber = param[index];
-//         for (let i = 0; i < param.length; i += 1){
-//             checkAgain = param[i]
-//             if(checkNumber === checkAgain){
-//                 repeats += checkAgain
-//                 break;
-//             }
-//         }
-//     }
-//     return repeats
-// }
+function repeat(param){
+    for (let index = 0; index < param.length; index += 1) {
+        checkNumber = param[index];
+        for (let i = 0; i < param.length; i += 1){
+            checkAgain = param[i];
+            if(checkNumber === checkAgain){
+                numberRepeated += 1;
+            }
+            if(numberRepeated > repeats){
+                repeats = numberRepeated;
+                bestRepeated = index;
+            }
+            numberRepeated = 0;
+        }
+    }
+    return param[bestRepeated]
+}
 
-// console.log(repeat(array))
+console.log(repeat(array))
 
 // Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
 
@@ -111,13 +117,13 @@
 // Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word.
 //  Considere que a string ending sempre será menor que a string word.
 
-function checkEnding(word, ending){
-    if (word.endsWith(ending)){
-        return true
-    }
-    else{
-        return false
-    }
-}
+// function checkEnding(word, ending){
+//     if (word.endsWith(ending)){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
 
-console.log(checkEnding('joaofernando', 'fernan'))
+// console.log(checkEnding('joaofernando', 'fernan'))
